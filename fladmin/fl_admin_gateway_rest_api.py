@@ -4,7 +4,7 @@ import requests
 
 from dto import ModelMetadata, EndRoundModel
 from gateway_rest_api import GatewayRestApi
-from identity.base.support.utils import log_json, log_msg
+from utils import log_json, log_msg
 
 
 class FlAdminGatewayRestApi(GatewayRestApi):

@@ -8,7 +8,7 @@ from flevents.event_processor import EventProcessor
 from leadaggregator.lead_aggregator_gateway_rest_api import LeadAggregatorGatewayRestApi
 from dto import AggregatedSecret, \
     EndRoundModel, ModelMetadata
-from identity.base.support.utils import log_msg
+from utils import log_msg
 
 
 class LeadAggregatorEventProcessor(EventProcessor):

@@ -1,7 +1,7 @@
 import asyncio
 import threading
 
-from identity.base.support.utils import log_msg
+from utils import log_msg
 
 
 class SimplePeriodic:

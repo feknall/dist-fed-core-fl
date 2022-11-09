@@ -9,7 +9,7 @@ from config import ClientConfig
 from flevents.event_processor import EventProcessor
 from dto import ModelSecretRequest, ModelMetadata
 from trainer.trainer_gateway_rest_api import TrainerGatewayRestApi
-from identity.base.support.utils import log_msg
+from utils import log_msg
 
 config = ClientConfig()
 client_datasets = mnist_common.load_train_dataset(config.number_of_clients, permute=True)

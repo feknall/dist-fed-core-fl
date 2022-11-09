@@ -3,7 +3,7 @@ import time
 
 import requests
 
-from identity.base.support.utils import log_msg
+from utils import log_msg
 from dto import EndRoundModel, PersonalInfo
 
 
@@ -15,8 +15,8 @@ class GatewayRestApi:
 
     def get_end_round_model_base(self, model_id: str, req_addr) -> EndRoundModel:
         log_msg("Getting end round model...")
-        log_msg("Waiting 5 seconds for stupid reasons :)")
-        time.sleep(5)
+        # log_msg("Waiting 5 seconds for stupid reasons :)")
+        # time.sleep(5)
 
         log_msg(f"Request address: {req_addr}")
 

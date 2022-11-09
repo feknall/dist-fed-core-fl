@@ -4,7 +4,7 @@ import threading
 import websockets
 
 from leadaggregator.lead_aggregator_event_processor import LeadAggregatorEventProcessor
-from identity.base.support.utils import log_msg
+from utils import log_msg
 from info_pb2 import Event
 
 AGGREGATION_FINISHED_EVENT = "AGGREGATION_FINISHED_EVENT"

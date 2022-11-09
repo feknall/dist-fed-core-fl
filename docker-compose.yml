@@ -3,6 +3,8 @@ services:
   aggregatorOrg1:
     container_name: fl-aggregator.org1.example.com
     image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
     labels:
       service: aggregator-core
     command:
@@ -13,6 +15,8 @@ services:
   aggregatorOrg2:
     container_name: fl-aggregator.org2.example.com
     image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
     labels:
       service: aggregator-core
     command:
@@ -23,6 +27,8 @@ services:
   leadAggregator:
     container_name: fl-leadAggregator.org2.example.com
     image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
     labels:
       service: leadAggregator-core
     command:
@@ -33,6 +39,8 @@ services:
   trainer01:
     container_name: fl-trainer01.example.com
     image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
     labels:
       service: trainer-core
     command:
@@ -44,6 +52,8 @@ services:
   trainer02:
     container_name: fl-trainer02.example.com
     image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
     labels:
       service: trainer-core
     command:
@@ -55,16 +65,12 @@ services:
   flAdmin:
     container_name: fl-flAdmin.org2.example.com
     image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
     labels:
       service: flAdmin-core
     command:
       - "flAdmin"
       - "localhost"
       - "8083"
-    depends_on:
-      - trainer01
-      - trainer02
-      - aggregatorOrg1
-      - aggregatorOrg2
-      - leadAggregator
     network_mode: "host"

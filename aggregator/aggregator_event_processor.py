@@ -7,7 +7,7 @@ import numpy as np
 from aggregator.aggregator_gateway_rest_api import AggregatorGatewayRestApi
 from flevents.event_processor import EventProcessor
 from dto import ModelSecretResponse, AggregatedSecret, ModelMetadata
-from identity.base.support.utils import log_msg
+from utils import log_msg
 
 
 class AggregatorEventProcessor(EventProcessor):

@@ -6,8 +6,8 @@ import mnist_common
 from fladmin.fl_admin_gateway_rest_api import FlAdminGatewayRestApi
 from flevents.event_processor import EventProcessor
 from dto import ModelMetadata
-from identity.base.support.utils import log_msg
-
+from utils import log_msg
+import time
 x_test, y_test = mnist_common.load_test_dataset()
 
 
@@ -24,6 +24,7 @@ class FlAdminEventProcessor(EventProcessor):
         model = mnist_common.get_model()
         model.set_weights(weights)
         model.evaluate(x_test, y_test, verbose=1)
+        print(f"Time: {time.time()}")
 
     def create_model_metadata(self, event_payload):
         x = json.loads(event_payload)

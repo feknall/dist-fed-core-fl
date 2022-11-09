@@ -7,7 +7,7 @@ class Config:
     number_of_servers = 2 # don't change this value
     stop_receive_blocks = False
     count_sum = 0
-    training_rounds = 3
+    training_rounds = 10
     epochs = 1
     batch_size = 16
     verbose = 1

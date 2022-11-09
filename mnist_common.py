@@ -12,7 +12,7 @@ input_shape = (feature_vector_length,)
 def load_train_dataset(n_clients=3, permute=False):
     client_datasets = {}
 
-    (x_train, y_train), (_, _) = mnist.load_data()[:2000]
+    (x_train, y_train), (_, _) = mnist.load_data()
 
     x_train = x_train.reshape(x_train.shape[0], feature_vector_length)
 

@@ -6,7 +6,7 @@ import requests
 from dto import PersonalInfo, EndRoundModel
 from dto import ModelSecretRequest
 from gateway_rest_api import GatewayRestApi
-from identity.base.support.utils import log_msg, log_json
+from utils import log_msg, log_json
 
 
 class TrainerGatewayRestApi(GatewayRestApi):

@@ -6,7 +6,7 @@ import requests
 from dto import EndRoundModel, AggregatedSecret, \
     AggregatedSecretList
 from gateway_rest_api import GatewayRestApi
-from identity.base.support.utils import log_msg
+from utils import log_msg
 
 
 class LeadAggregatorGatewayRestApi(GatewayRestApi):
@@ -21,8 +21,8 @@ class LeadAggregatorGatewayRestApi(GatewayRestApi):
 
     def check_all_aggregated_secrets_received(self, model_id: str):
         log_msg("Check all aggregated secrets received...")
-        log_msg("Waiting 5 seconds for stupid reasons :)")
-        time.sleep(5)
+        # log_msg("Waiting 5 seconds for stupid reasons :)")
+        # time.sleep(5)
 
         req_addr = self.base_url + '/leadAggregator/checkAllAggregatedSecretsReceived'
         log_msg(f"Request address: {req_addr}")
@@ -41,16 +41,16 @@ class LeadAggregatorGatewayRestApi(GatewayRestApi):
             return False
 
     def add_end_round_model(self, body: EndRoundModel):
-        log_msg("Waiting 5 seconds for stupid reasons :)")
-        time.sleep(5)
+        # log_msg("Waiting 5 seconds for stupid reasons :)")
+        # time.sleep(5)
         log_msg("Add end round model...")
 
         response = requests.post(self.base_url + '/leadAggregator/addEndRoundModel', json=body.to_map())
         log_msg(response)
 
     def get_aggregated_secrets_for_current_round(self, model_id: str):
-        log_msg("Waiting 5 seconds for stupid reasons :)")
-        time.sleep(5)
+        # log_msg("Waiting 5 seconds for stupid reasons :)")
+        # time.sleep(5)
         log_msg("Sending get aggregated secrets for current round...")
 
         req_addr = self.base_url + '/leadAggregator/getAggregatedSecretListForCurrentRound'

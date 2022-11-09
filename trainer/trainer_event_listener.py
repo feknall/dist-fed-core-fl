@@ -4,7 +4,7 @@ import threading
 import websockets
 
 from trainer.trainer_event_processor import TrainerEventProcessor
-from identity.base.support.utils import log_msg
+from utils import log_msg
 from info_pb2 import Event
 
 AGGREGATION_FINISHED_EVENT = "AGGREGATION_FINISHED_EVENT"
