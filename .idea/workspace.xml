@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Add running configuration files">
+    <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Successful results for 10 clients, has problem with 5 clients">
       <change afterPath="$PROJECT_DIR$/fl_config_generator.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gateway_config_generator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -188,7 +188,7 @@
       <workItem from="1667527384416" duration="19000" />
       <workItem from="1667823610094" duration="688000" />
       <workItem from="1667997420024" duration="11287000" />
-      <workItem from="1668083795285" duration="13886000" />
+      <workItem from="1668083795285" duration="14254000" />
     </task>
     <task id="LOCAL-00001" summary="successful connection for flAdmin">
       <created>1666199517142</created>
@@ -295,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667828162719</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Successful results for 10 clients, has problem with 5 clients">
+      <created>1668102350998</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668102350999</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +335,8 @@
     <MESSAGE value="Change name" />
     <MESSAGE value="Fix bug" />
     <MESSAGE value="Add running configuration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add running configuration files" />
+    <MESSAGE value="Successful results for 10 clients, has problem with 5 clients" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successful results for 10 clients, has problem with 5 clients" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

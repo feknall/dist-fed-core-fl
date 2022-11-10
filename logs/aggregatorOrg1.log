@@ -1,0 +1,1133 @@
+Container fl-aggregator.org1.example.com  Created
+Attaching to fl-aggregator.org1.example.com
+fl-aggregator.org1.example.com  | 2022-11-09 14:00:25.030049: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+fl-aggregator.org1.example.com  | To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mStart listening to events...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking user has trainer attribute ...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/general/checkHasAggregatorAttribute[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mGetting personal info...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getPersonalInfo[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0mname: "CREATE_MODEL_METADATA_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"initiated\",\"trainingRounds\":10,\"currentRound\":0}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "START_TRAINING_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":0}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model training started. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":0}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":1}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":2}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":3}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":4}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":5}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":6}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":7}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":8}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "ROUND_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":9}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: false[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mWaiting for more secrets...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mCheck all secrets received...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/checkAllSecretsReceived[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mResponse: true[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregator is started :)[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mSending reading model secrets for current round...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8091/aggregator/getModelSecretListForCurrentRound[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mRequest params: {'modelId': '96885'}[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mTrying to aggregate 2 secrets[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAdding aggregated secret...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"address"[0m:[0m [0;38;5;124m"http://localhost:8091/aggregator/addAggregatedSecret"[0m,[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"<Response [200]>"[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m}[0m[0m
+fl-aggregator.org1.example.com  | [0m  [0m[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAggregation finished successfully.[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mEVENT: A model secret is added. modelId: 96885[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mAlready started. Ignoring...[0m
+fl-aggregator.org1.example.com  | [0mname: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | name: "TRAINING_FINISHED_EVENT"
+fl-aggregator.org1.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":10}"
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | [0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
+fl-aggregator.org1.example.com  | [0m[0m[?7h[0;35mChecking-in...[0m
+fl-aggregator.org1.example.com  | [0mTask exception was never retrieved
+fl-aggregator.org1.example.com  | future: <Task finished name='Task-1' coro=<SimplePeriodic.periodic() done, defined at /project/simple_periodic.py:11> exception=ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /aggregator/checkInAggregator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0e73e38af0>: Failed to establish a new connection: [Errno 111] Connection refused'))"))>
+fl-aggregator.org1.example.com  | Traceback (most recent call last):
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 174, in _new_conn
+fl-aggregator.org1.example.com  |     conn = connection.create_connection(
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/util/connection.py", line 95, in create_connection
+fl-aggregator.org1.example.com  |     raise err
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/util/connection.py", line 85, in create_connection
+fl-aggregator.org1.example.com  |     sock.connect(sa)
+fl-aggregator.org1.example.com  | ConnectionRefusedError: [Errno 111] Connection refused
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | During handling of the above exception, another exception occurred:
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | Traceback (most recent call last):
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 703, in urlopen
+fl-aggregator.org1.example.com  |     httplib_response = self._make_request(
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 398, in _make_request
+fl-aggregator.org1.example.com  |     conn.request(method, url, **httplib_request_kw)
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 239, in request
+fl-aggregator.org1.example.com  |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+fl-aggregator.org1.example.com  |   File "/usr/lib/python3.8/http/client.py", line 1256, in request
+fl-aggregator.org1.example.com  |     self._send_request(method, url, body, headers, encode_chunked)
+fl-aggregator.org1.example.com  |   File "/usr/lib/python3.8/http/client.py", line 1302, in _send_request
+fl-aggregator.org1.example.com  |     self.endheaders(body, encode_chunked=encode_chunked)
+fl-aggregator.org1.example.com  |   File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+fl-aggregator.org1.example.com  |     self._send_output(message_body, encode_chunked=encode_chunked)
+fl-aggregator.org1.example.com  |   File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+fl-aggregator.org1.example.com  |     self.send(msg)
+fl-aggregator.org1.example.com  |   File "/usr/lib/python3.8/http/client.py", line 951, in send
+fl-aggregator.org1.example.com  |     self.connect()
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 205, in connect
+fl-aggregator.org1.example.com  |     conn = self._new_conn()
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 186, in _new_conn
+fl-aggregator.org1.example.com  |     raise NewConnectionError(
+fl-aggregator.org1.example.com  | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0e73e38af0>: Failed to establish a new connection: [Errno 111] Connection refused
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | During handling of the above exception, another exception occurred:
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | Traceback (most recent call last):
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 489, in send
+fl-aggregator.org1.example.com  |     resp = conn.urlopen(
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+fl-aggregator.org1.example.com  |     retries = retries.increment(
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/urllib3/util/retry.py", line 592, in increment
+fl-aggregator.org1.example.com  |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+fl-aggregator.org1.example.com  | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /aggregator/checkInAggregator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0e73e38af0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | During handling of the above exception, another exception occurred:
+fl-aggregator.org1.example.com  | 
+fl-aggregator.org1.example.com  | Traceback (most recent call last):
+fl-aggregator.org1.example.com  |   File "/project/simple_periodic.py", line 14, in periodic
+fl-aggregator.org1.example.com  |     self.check_in_func()
+fl-aggregator.org1.example.com  |   File "/project/aggregator/aggregator_control_panel.py", line 11, in check_in_func
+fl-aggregator.org1.example.com  |     self.gateway_rest_api.check_in_aggregator()
+fl-aggregator.org1.example.com  |   File "/project/aggregator/aggregator_gateway_rest_api.py", line 63, in check_in_aggregator
+fl-aggregator.org1.example.com  |     response = requests.post(self.base_url + '/aggregator/checkInAggregator')
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 115, in post
+fl-aggregator.org1.example.com  |     return request("post", url, data=data, json=json, **kwargs)
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 59, in request
+fl-aggregator.org1.example.com  |     return session.request(method=method, url=url, **kwargs)
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 587, in request
+fl-aggregator.org1.example.com  |     resp = self.send(prep, **send_kwargs)
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 701, in send
+fl-aggregator.org1.example.com  |     r = adapter.send(request, **kwargs)
+fl-aggregator.org1.example.com  |   File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 565, in send
+fl-aggregator.org1.example.com  |     raise ConnectionError(e, request=request)
+fl-aggregator.org1.example.com  | requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /aggregator/checkInAggregator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0e73e38af0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Gracefully stopping... (press Ctrl+C again to force)
+Container fl-aggregator.org1.example.com  Stopping
