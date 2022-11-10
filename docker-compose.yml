@@ -36,32 +36,6 @@ services:
       - "localhost"
       - "8082"
     network_mode: "host"
-  trainer01:
-    container_name: fl-trainer01.example.com
-    image: hmaid/hyperledger:dist-fed-core-fl
-    tty: true
-    stdin_open: true
-    labels:
-      service: trainer-core
-    command:
-      - "trainer"
-      - "localhost"
-      - "8080"
-      - "0"
-    network_mode: "host"
-  trainer02:
-    container_name: fl-trainer02.example.com
-    image: hmaid/hyperledger:dist-fed-core-fl
-    tty: true
-    stdin_open: true
-    labels:
-      service: trainer-core
-    command:
-      - "trainer"
-      - "localhost"
-      - "8081"
-      - "1"
-    network_mode: "host"
   flAdmin:
     container_name: fl-flAdmin.org2.example.com
     image: hmaid/hyperledger:dist-fed-core-fl

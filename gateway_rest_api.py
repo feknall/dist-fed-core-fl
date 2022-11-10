@@ -3,7 +3,7 @@ import time
 
 import requests
 
-from utils import log_msg
+from utils import log_msg, log_json
 from dto import EndRoundModel, PersonalInfo
 
 
@@ -42,9 +42,14 @@ class GatewayRestApi:
 
     def get_personal_info_single(self, req_addr):
         log_msg("Getting personal info...")
-        log_msg(f"Request address: {req_addr}")
-
         resp = requests.get(req_addr)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(resp)
+        }
+        log_json(resp_json)
+
         content = resp.content.decode()
         personal_info_str_1 = json.loads(content)
 
@@ -56,18 +61,28 @@ class GatewayRestApi:
         params = {
             'model_id': model_id
         }
-        response = requests.get(self.base_url + '/general/getTrainedModel', params=params)
-        print(response)
+        req_addr = self.base_url + '/general/getTrainedModel'
+        response = requests.get(req_addr, params=params)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
     def check_has_aggregator_attribute(self):
         log_msg('Checking user has trainer attribute ...')
 
         req_addr = self.base_url + '/general/checkHasAggregatorAttribute'
-        log_msg(f"Request address: {req_addr}")
-
         response = requests.get(req_addr)
-        content = response.content.decode()
 
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
+
+        content = response.content.decode()
         log_msg(f"Response: {content}")
 
         return content
@@ -79,8 +94,13 @@ class GatewayRestApi:
         log_msg(f"Request address: {req_addr}")
 
         response = requests.get(req_addr)
-        content = response.content.decode()
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
+        content = response.content.decode()
         log_msg(f"Response: {content}")
 
         return content
@@ -89,9 +109,14 @@ class GatewayRestApi:
         log_msg('Checking user has trainer attribute ...')
 
         req_addr = self.base_url + '/general/checkHasTrainerAttribute'
-        log_msg(f"Request address: {req_addr}")
-
         response = requests.get(req_addr)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
+
         content = response.content.decode()
 
         log_msg(f"Response: {content}")
@@ -102,9 +127,14 @@ class GatewayRestApi:
         log_msg("Get I am selected for round...")
 
         req_addr = self.base_url + '/general/checkIAmSelectedForRound'
-        log_msg(f"Request address: {req_addr}")
-
         resp = requests.get(req_addr)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(resp)
+        }
+        log_json(resp_json)
+
         content = resp.content.decode()
         log_msg(f"Response: {content}")
 

@@ -12,7 +12,7 @@ class SimplePeriodic:
         while True:
             log_msg('Checking-in...')
             self.check_in_func()
-            await asyncio.sleep(30)
+            await asyncio.sleep(20)
 
     def loop_in_thread(self, loop):
         loop.create_task(self.periodic())

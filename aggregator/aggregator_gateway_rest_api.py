@@ -6,7 +6,7 @@ import requests
 from dto import ModelSecretResponse, AggregatedSecret, \
     ModelSecretList
 from gateway_rest_api import GatewayRestApi
-from utils import log_msg
+from utils import log_msg, log_json
 
 
 class AggregatorGatewayRestApi(GatewayRestApi):
@@ -15,14 +15,16 @@ class AggregatorGatewayRestApi(GatewayRestApi):
         log_msg("Adding aggregated secret...")
 
         req_addr = self.base_url + '/aggregator/addAggregatedSecret'
-        log_msg(f"Request address: {req_addr}")
 
         response = requests.post(req_addr, json=body.to_map())
-        print(response)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
     def get_model_secrets_for_current_round(self, model_id: str) -> list:
-        # log_msg("Waiting 5 seconds for stupid reasons :)")
-        # time.sleep(5)
         log_msg("Sending reading model secrets for current round...")
 
         req_addr = self.base_url + '/aggregator/getModelSecretListForCurrentRound'
@@ -34,7 +36,13 @@ class AggregatorGatewayRestApi(GatewayRestApi):
         log_msg(f"Request params: {params}")
 
         resp = requests.get(req_addr, params=params)
-        log_msg(resp)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(resp)
+        }
+        log_json(resp_json)
+
         content = resp.content.decode()
         model_secret_list = ModelSecretList(**json.loads(content))
 
@@ -51,29 +59,43 @@ class AggregatorGatewayRestApi(GatewayRestApi):
             'modelId': model_id,
             'round': round
         }
-        response = requests.get(self.base_url + '/aggregator/getModelSecretList', params=params)
-        print(response)
+        req_addr = self.base_url + '/aggregator/getModelSecretList'
+        response = requests.get(req_addr, params=params)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
     def check_in_aggregator(self):
-        response = requests.post(self.base_url + '/aggregator/checkInAggregator')
-        log_msg(response)
+        req_addr = self.base_url + '/aggregator/checkInAggregator'
+        response = requests.post(req_addr)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
     def check_all_secrets_received(self, model_id: str):
         log_msg("Check all secrets received...")
-        # log_msg("Waiting 5 seconds for stupid reasons :)")
-        # time.sleep(5)
 
         req_addr = self.base_url + '/aggregator/checkAllSecretsReceived'
-        log_msg(f"Request address: {req_addr}")
 
         params = {
             'modelId': model_id
         }
 
         resp = requests.get(req_addr, params=params)
-        content = resp.content.decode()
-        log_msg(f"Response: {content}")
 
+        resp_json = {
+            "address": req_addr,
+            "status": str(resp)
+        }
+        log_json(resp_json)
+
+        content = resp.content.decode()
         if content == "true":
             return True
         else:

@@ -14,6 +14,8 @@ from utils import log_msg
 config = ClientConfig()
 client_datasets = mnist_common.load_train_dataset(config.number_of_clients, permute=True)
 
+highest_range = np.finfo('float16').max
+field_size = np.finfo('float32').max
 
 class TrainerEventProcessor(EventProcessor):
     roundCounter = 0
@@ -39,20 +41,24 @@ class TrainerEventProcessor(EventProcessor):
         layer_dict, layer_shape, shares_dict = {}, {}, {}
         data = np.array(model.get_weights())
         no_of_layers = len(data)
+
         for layer_index in range(no_of_layers):
             layer_dict[layer_index] = data[layer_index]
             layer_shape[layer_index] = data[layer_index].shape
 
         for layer_index in range(no_of_layers):
-            x = np.copy(layer_dict[layer_index])
-            shares_dict[layer_index] = np.random.random(
-                size=(self.secretsPerClient,) + layer_shape[layer_index]).astype(np.float64)
+            shares_dict[layer_index] = np.zeros(shape=(self.secretsPerClient,) + layer_shape[layer_index],
+                                                dtype=np.float64)
 
             for server_index in range(self.secretsPerClient - 1):
-                shares_dict[layer_index][server_index] = np.random.random(size=layer_shape[layer_index]).astype(
-                    np.float32)
-                x = np.subtract(x, shares_dict[layer_index][server_index])
-            shares_dict[layer_index][self.secretsPerClient - 1] = x
+                shares_dict[layer_index][server_index] = \
+                    np.random.uniform(low=0, high=highest_range, size=layer_shape[layer_index]).astype(np.float64)
+
+            share_sum_except_last = np.array(shares_dict[layer_index][:self.secretsPerClient - 1]).sum(axis=0, dtype=np.float64)
+            x = np.copy(np.array(layer_dict[layer_index], dtype=np.float64))
+            diff = np.subtract(x, share_sum_except_last, dtype=np.float64)
+            last_share = np.fmod(diff, field_size, dtype=np.float64)
+            shares_dict[layer_index][self.secretsPerClient - 1] = last_share
 
         all_servers = []
         for server_index in range(self.secretsPerClient):

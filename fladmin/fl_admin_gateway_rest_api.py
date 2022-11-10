@@ -14,17 +14,30 @@ class FlAdminGatewayRestApi(GatewayRestApi):
         return super().get_end_round_model_base(model_id, req_addr)
 
     def init_ledger(self):
-        response = requests.get(self.base_url + '/flAdmin/initLedger')
-        print(response)
+        req_addr = self.base_url + '/flAdmin/initLedger'
+        response = requests.get(req_addr)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
     def create_model_metadata(self, body: ModelMetadata):
         log_msg("Sending creating a model metadata...")
-        log_msg("Request /flAdmin/createModelMetadata:")
 
         json_body = body.to_map()
         log_json(json_body)
 
-        resp = requests.post(self.base_url + '/flAdmin/createModelMetadata', json=json_body)
+        req_addr = self.base_url + '/flAdmin/createModelMetadata'
+        resp = requests.post(req_addr, json=json_body)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(resp)
+        }
+        log_json(resp_json)
+
         content = resp.content
         metadata = json.loads(content)
 
@@ -35,14 +48,19 @@ class FlAdminGatewayRestApi(GatewayRestApi):
         log_msg("Sending start training...")
 
         req_addr = self.base_url + '/flAdmin/startTraining'
-        log_msg(f"Request address: {req_addr}")
-
         params = {
             'modelId': model_id
         }
         log_json(params)
 
         resp = requests.post(req_addr, params=params)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(resp)
+        }
+        log_json(resp_json)
+
         content = resp.content
         metadata = json.loads(content)
 
@@ -60,8 +78,13 @@ class FlAdminGatewayRestApi(GatewayRestApi):
         log_msg(f"Request address: {req_addr}")
 
         response = requests.get(req_addr)
-        content = response.content
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
+        content = response.content
         log_msg(f"Response: {content}")
 
         return content

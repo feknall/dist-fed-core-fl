@@ -17,12 +17,25 @@ class TrainerGatewayRestApi(GatewayRestApi):
 
     def add_model_secret(self, body: ModelSecretRequest):
         log_msg("Sending secrets...")
-        response = requests.post(self.base_url + '/trainer/addModelSecret', json=body.to_map())
-        print(response)
+
+        req_addr = self.base_url + '/trainer/addModelSecret'
+        response = requests.post(req_addr, json=body.to_map())
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
     def check_in_trainer(self):
-        response = requests.post(self.base_url + '/trainer/checkInTrainer')
-        log_msg(response)
+        req_addr = self.base_url + '/trainer/checkInTrainer'
+        response = requests.post(req_addr)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(response)
+        }
+        log_json(resp_json)
 
     def get_personal_info_trainer(self):
         log_msg("Getting personal info...")
@@ -31,6 +44,13 @@ class TrainerGatewayRestApi(GatewayRestApi):
         log_msg(f"Request address: {req_addr}")
 
         resp = requests.get(req_addr)
+
+        resp_json = {
+            "address": req_addr,
+            "status": str(resp)
+        }
+        log_json(resp_json)
+
         content = resp.content.decode()
         a_list = json.loads(content)
 

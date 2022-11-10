@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Add running configuration files">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fl_config_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway_config_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_event_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_periodic.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_periodic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/stop.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/trainer_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_event_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/trainer_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_gateway_rest_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,21 +72,80 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/identity/verifier" />
       <recent name="$PROJECT_DIR$/identity/client" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fl/aggregator" />
       <recent name="$PROJECT_DIR$/fl/leadaggregator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fl" />
       <recent name="$PROJECT_DIR$/identity" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fl/trash" />
       <recent name="$PROJECT_DIR$/fl/aggregator" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.trainer01_runner">
+  <component name="RunManager" selected="Shell Script.start.sh">
+    <configuration name="fl_config_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dist-fed-core-fl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fl_config_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gateway_config_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dist-fed-core-fl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gateway_config_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/start.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.trainer01_runner" />
       <item itemvalue="Python.trainer02_runner" />
@@ -81,7 +154,17 @@
       <item itemvalue="Python.lead_aggregator_runner" />
       <item itemvalue="Python.fl_admin_runner" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.gateway_config_generator" />
+      <item itemvalue="Python.fl_config_generator" />
+      <item itemvalue="Shell Script.start.sh" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.start.sh" />
+        <item itemvalue="Python.fl_config_generator" />
+        <item itemvalue="Python.gateway_config_generator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,6 +187,8 @@
       <workItem from="1667483124235" duration="6683000" />
       <workItem from="1667527384416" duration="19000" />
       <workItem from="1667823610094" duration="688000" />
+      <workItem from="1667997420024" duration="11287000" />
+      <workItem from="1668083795285" duration="13886000" />
     </task>
     <task id="LOCAL-00001" summary="successful connection for flAdmin">
       <created>1666199517142</created>
@@ -297,6 +382,8 @@
     <SUITE FILE_PATH="coverage/FedBlockchain$trainer02_runner.coverage" NAME="trainer02_runner Coverage Results" MODIFIED="1666840019173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl" />
     <SUITE FILE_PATH="coverage/FedBlockchain$main.coverage" NAME="main Coverage Results" MODIFIED="1666238997495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/FedBlockchain$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1667346985103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/identity/client" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$fl_config_generator.coverage" NAME="fl_config_generator Coverage Results" MODIFIED="1668088650987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$config_generator.coverage" NAME="config_generator Coverage Results" MODIFIED="1668084920413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FedBlockchain$aggregator_runner.coverage" NAME="aggregator_org1_runner Coverage Results" MODIFIED="1666840022441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/aggregator" />
     <SUITE FILE_PATH="coverage/FedBlockchain$issuer.coverage" NAME="issuer Coverage Results" MODIFIED="1667410825069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FedBlockchain$agent.coverage" NAME="agent Coverage Results" MODIFIED="1662996172974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base/support" />

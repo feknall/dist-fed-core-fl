@@ -10,6 +10,8 @@ from dto import AggregatedSecret, \
     EndRoundModel, ModelMetadata
 from utils import log_msg
 
+field_size = np.finfo('float32').max
+
 
 class LeadAggregatorEventProcessor(EventProcessor):
     current_round = -1
@@ -48,7 +50,7 @@ class LeadAggregatorEventProcessor(EventProcessor):
             layer_list = []
             for server_index in range(self.secretsPerClient):
                 layer_list.append(decoded_aggregated_secrets[server_index][layer_index])
-            model[layer_index] = np.array(layer_list).sum(axis=0, dtype=np.float64)
+            model[layer_index] = np.fmod(np.array(layer_list).sum(axis=0, dtype=np.float64), field_size)
 
         model_byte = base64.b64encode(pickle.dumps(model)).decode()
         end_round_model = EndRoundModel(self.modelId, model_byte)
