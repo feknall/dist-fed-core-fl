@@ -1,6 +1,4 @@
 import json
-import time
-
 import requests
 
 from dto import ModelSecretResponse, AggregatedSecret, \
@@ -61,16 +59,6 @@ class AggregatorGatewayRestApi(GatewayRestApi):
         }
         req_addr = self.base_url + '/aggregator/getModelSecretList'
         response = requests.get(req_addr, params=params)
-
-        resp_json = {
-            "address": req_addr,
-            "status": str(response)
-        }
-        log_json(resp_json)
-
-    def check_in_aggregator(self):
-        req_addr = self.base_url + '/aggregator/checkInAggregator'
-        response = requests.post(req_addr)
 
         resp_json = {
             "address": req_addr,

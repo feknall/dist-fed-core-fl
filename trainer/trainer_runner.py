@@ -14,7 +14,6 @@ def run(address: str, port: str, client_index: int):
     trainer_event_listener.listen(event_processor, websocket_address)
 
     control_panel = TrainerControlPanel(gateway_rest_api)
-    control_panel.check_in()
     control_panel.has_trainer_attribute()
     control_panel.get_personal_info()
 

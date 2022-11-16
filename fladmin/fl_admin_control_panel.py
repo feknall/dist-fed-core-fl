@@ -2,11 +2,10 @@ from random import randint
 
 from config import Config
 from fladmin.fl_admin_gateway_rest_api import FlAdminGatewayRestApi
-from simple_periodic import SimplePeriodic
 from dto import ModelMetadata
 
 
-class FlAdminControlPanel(SimplePeriodic):
+class FlAdminControlPanel:
 
     def __init__(self, gateway_rest_api: FlAdminGatewayRestApi):
         self.gateway_rest_api = gateway_rest_api

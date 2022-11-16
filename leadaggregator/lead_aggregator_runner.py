@@ -10,12 +10,10 @@ def run(address: str, port: str):
     gateway_rest_api = LeadAggregatorGatewayRestApi(f'http://{address}:{port}')
     websocket_address = f'ws://{address}:{port}'
 
-    control_panel = LeadAggregatorControlPanel(gateway_rest_api)
     event_processor = LeadAggregatorEventProcessor(secrets_per_client=2, gateway_rest_api=gateway_rest_api)
-
     event_listener.listen(event_processor, websocket_address)
 
-    control_panel.check_in()
+    control_panel = LeadAggregatorControlPanel(gateway_rest_api)
     control_panel.check_has_lead_aggregator_attribute()
     control_panel.get_personal_info()
 

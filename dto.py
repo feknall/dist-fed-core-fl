@@ -111,7 +111,7 @@ class PersonalInfo:
     selectedForRound = None
     checkedIn = None
 
-    def __init__(self, clientId, username, role, mspId, checkedIn, selectedForRound=None):
+    def __init__(self, clientId, username, role, mspId, checkedIn=None, selectedForRound=None):
         self.clientId = clientId
         self.username = username
         self.role = role

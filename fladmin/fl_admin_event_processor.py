@@ -23,8 +23,9 @@ class FlAdminEventProcessor(EventProcessor):
 
         model = mnist_common.get_model()
         model.set_weights(weights)
-        model.evaluate(x_test, y_test, verbose=1)
         print(f"Time: {time.time()}")
+        results = model.evaluate(x_test, y_test, verbose=1)
+        print(f"Accuracy: {results[1]}")
 
     def create_model_metadata(self, event_payload):
         x = json.loads(event_payload)

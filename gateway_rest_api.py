@@ -34,12 +34,6 @@ class GatewayRestApi:
 
         return end_round_model
 
-    def get_selected_trainers_for_current_round(self):
-        log_msg("Get selected trainers for current round...")
-        log_msg("Request")
-
-        resp = requests.get(self.base_url + '/general/getSelectedTrainersForCurrentRound')
-
     def get_personal_info_single(self, req_addr):
         log_msg("Getting personal info...")
         resp = requests.get(req_addr)
@@ -122,25 +116,3 @@ class GatewayRestApi:
         log_msg(f"Response: {content}")
 
         return content
-
-    def check_i_am_selected_for_round(self):
-        log_msg("Get I am selected for round...")
-
-        req_addr = self.base_url + '/general/checkIAmSelectedForRound'
-        resp = requests.get(req_addr)
-
-        resp_json = {
-            "address": req_addr,
-            "status": str(resp)
-        }
-        log_json(resp_json)
-
-        content = resp.content.decode()
-        log_msg(f"Response: {content}")
-
-        if content == "true":
-            return True
-        else:
-            return False
-
-

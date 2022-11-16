@@ -27,16 +27,6 @@ class TrainerGatewayRestApi(GatewayRestApi):
         }
         log_json(resp_json)
 
-    def check_in_trainer(self):
-        req_addr = self.base_url + '/trainer/checkInTrainer'
-        response = requests.post(req_addr)
-
-        resp_json = {
-            "address": req_addr,
-            "status": str(response)
-        }
-        log_json(resp_json)
-
     def get_personal_info_trainer(self):
         log_msg("Getting personal info...")
 

@@ -4,22 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Successful results for 10 clients, has problem with 5 clients">
-      <change afterPath="$PROJECT_DIR$/fl_config_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway_config_generator.py" afterDir="false" />
+    <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Add docker-compos-fl-trainer.yml">
+      <change afterPath="$PROJECT_DIR$/start-others.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/status.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_control_panel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_event_listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_event_listener.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_event_processor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.py" beforeDir="false" afterPath="$PROJECT_DIR$/dto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_control_panel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_event_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_runner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_rest_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_event_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_control_panel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_gateway_rest_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_periodic.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_periodic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/stop.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_periodic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start-all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/trainer_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_control_panel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trainer/trainer_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_event_processor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trainer/trainer_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/trainer_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_runner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +141,7 @@
     <configuration name="start.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/start.sh" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/start-all.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -188,7 +195,9 @@
       <workItem from="1667527384416" duration="19000" />
       <workItem from="1667823610094" duration="688000" />
       <workItem from="1667997420024" duration="11287000" />
-      <workItem from="1668083795285" duration="14254000" />
+      <workItem from="1668083795285" duration="15422000" />
+      <workItem from="1668272948578" duration="9994000" />
+      <workItem from="1668610540532" duration="971000" />
     </task>
     <task id="LOCAL-00001" summary="successful connection for flAdmin">
       <created>1666199517142</created>
@@ -302,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668102350999</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add docker-compos-fl-trainer.yml">
+      <created>1668102387818</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668102387818</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +352,8 @@
     <MESSAGE value="Fix bug" />
     <MESSAGE value="Add running configuration files" />
     <MESSAGE value="Successful results for 10 clients, has problem with 5 clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successful results for 10 clients, has problem with 5 clients" />
+    <MESSAGE value="Add docker-compos-fl-trainer.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add docker-compos-fl-trainer.yml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

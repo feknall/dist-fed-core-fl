@@ -1,3 +1,5 @@
+import time
+
 from fladmin.fl_admin_control_panel import FlAdminControlPanel
 from fladmin.fl_admin_event_processor import FlAdminEventProcessor
 from fladmin.fl_admin_gateway_rest_api import FlAdminGatewayRestApi
@@ -15,6 +17,9 @@ def run(address: str, port: str):
     control_panel.has_fl_admin_attribute()
     control_panel.get_personal_info()
     control_panel.create_model_metadata()
+    print(f"Start training...")
+    print(f"Time: {time.time()}")
+
     control_panel.start_training()
 
 

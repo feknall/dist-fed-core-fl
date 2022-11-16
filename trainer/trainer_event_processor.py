@@ -85,10 +85,6 @@ class TrainerEventProcessor(EventProcessor):
         log_msg(f"Start training...")
 
     def start_training_event(self, event_payload):
-        client_is_selected = self.gateway_rest_api.check_i_am_selected_for_round()
-        if not client_is_selected:
-            log_msg("It's not my turn. Ignoring...")
-            return
         x = json.loads(event_payload)
         metadata = ModelMetadata(**x)
         log_msg(f"EVENT: A model training started. modelId: {metadata.modelId}")
@@ -96,11 +92,6 @@ class TrainerEventProcessor(EventProcessor):
         self.train_one_round()
 
     def round_finished(self, event_payload):
-        client_is_selected = self.gateway_rest_api.check_i_am_selected_for_round()
-        if not client_is_selected:
-            log_msg("It's not my turn. Ignoring...")
-            return
-
         end_round_model = self.gateway_rest_api.get_end_round_model(self.modelId)
         self.roundWeight = pickle.loads(base64.b64decode(end_round_model.weights))
         self.train_one_round()

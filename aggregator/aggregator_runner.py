@@ -14,7 +14,6 @@ def run(address: str, port: str):
     aggregator_event_listener.listen(event_processor, websocket_address)
 
     control_panel = AggregatorControlPanel(gateway_rest_api)
-    control_panel.check_in()
     control_panel.has_aggregator_attribute()
     control_panel.get_personal_info()
 

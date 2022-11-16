@@ -1,14 +1,10 @@
 from aggregator.aggregator_gateway_rest_api import AggregatorGatewayRestApi
-from simple_periodic import SimplePeriodic
 
 
-class AggregatorControlPanel(SimplePeriodic):
+class AggregatorControlPanel:
 
     def __init__(self, gateway_rest_api: AggregatorGatewayRestApi):
         self.gateway_rest_api = gateway_rest_api
-
-    def check_in_func(self):
-        self.gateway_rest_api.check_in_aggregator()
 
     def has_aggregator_attribute(self):
         self.gateway_rest_api.check_has_aggregator_attribute()
