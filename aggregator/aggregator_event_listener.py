@@ -27,7 +27,6 @@ async def process_socket_events(aggregator: AggregatorEventProcessor, websocket_
             event_name = event.name
             event_payload = event.payload
             if event_name == MODEL_SECRET_ADDED_EVENT:
-                # processor.model_secret_added(event_payload)
                 aggregator.model_secret_added(event_payload)
             elif event_name == START_TRAINING_EVENT:
                 aggregator.start_training_event(event_payload)

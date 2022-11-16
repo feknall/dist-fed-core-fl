@@ -26,17 +26,11 @@ async def process_socket_events(fl_admin: FlAdminEventProcessor, websocket_addre
             print(event)
             event_name = event.name
             event_payload = event.payload
-            if event_name == AGGREGATION_FINISHED_EVENT:
-                # processor.aggregation_finished(event_payload)
-                pass
-            elif event_name == ROUND_FINISHED_EVENT:
-                # processor.round_finished(event_payload)
+            if event_name == ROUND_FINISHED_EVENT:
                 fl_admin.round_finished(event_payload)
             elif event_name == CREATE_MODEL_METADATA_EVENT:
-                # processor.create_model_metadata(event_payload)
                 fl_admin.create_model_metadata(event_payload)
             elif event_name == START_TRAINING_EVENT:
-                # processor.start_training_event(event_payload)
                 fl_admin.start_training_event(event_payload)
 
 

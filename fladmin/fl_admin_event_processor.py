@@ -37,7 +37,6 @@ class FlAdminEventProcessor(EventProcessor):
         self.trainingRounds = metadata.trainingRounds
 
     def start_training_event(self, event_payload):
-        # Client
         x = json.loads(event_payload)
         metadata = ModelMetadata(**x)
         log_msg(f"EVENT: A model training started. modelId: {metadata.modelId}")

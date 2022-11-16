@@ -35,7 +35,6 @@ async def process_socket_events(trainer: TrainerEventProcessor, websocket_addres
                 trainer.training_finished(event_payload)
 
 
-
 def run(trainer: TrainerEventProcessor, websocket_address):
     asyncio.run(process_socket_events(trainer, websocket_address))
 

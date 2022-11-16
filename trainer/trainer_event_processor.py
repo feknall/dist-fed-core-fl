@@ -5,13 +5,13 @@ import numpy as np
 import json
 
 import mnist_common
-from config import ClientConfig
+from config import Config
 from flevents.event_processor import EventProcessor
 from dto import ModelSecretRequest, ModelMetadata
 from trainer.trainer_gateway_rest_api import TrainerGatewayRestApi
 from utils import log_msg
 
-config = ClientConfig()
+config = Config()
 client_datasets = mnist_common.load_train_dataset(config.number_of_clients, permute=True)
 
 highest_range = np.finfo('float16').max

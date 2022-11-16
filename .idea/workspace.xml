@@ -4,29 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Add docker-compos-fl-trainer.yml">
-      <change afterPath="$PROJECT_DIR$/start-others.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_control_panel.py" afterDir="false" />
+    <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Remove checkin functionality">
       <change beforePath="$PROJECT_DIR$/aggregator/aggregator_event_listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_event_listener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_event_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dto.py" beforeDir="false" afterPath="$PROJECT_DIR$/dto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_control_panel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_event_listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_event_listener.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_event_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fladmin/fl_admin_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fl_admin_runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/gateway_rest_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_control_panel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_gateway_rest_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leadaggregator/lead_aggregator_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/leadaggregator/lead_aggregator_runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_periodic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start-all.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/trainer_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_control_panel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flevents/event_listener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flevents/event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/flevents/event_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/trainer_event_listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_event_listener.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trainer/trainer_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_event_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/trainer_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_gateway_rest_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/trainer_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/aggregator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/fedshare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/lead_aggregator.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +189,7 @@
       <workItem from="1667997420024" duration="11287000" />
       <workItem from="1668083795285" duration="15422000" />
       <workItem from="1668272948578" duration="9994000" />
-      <workItem from="1668610540532" duration="971000" />
+      <workItem from="1668610540532" duration="1532000" />
     </task>
     <task id="LOCAL-00001" summary="successful connection for flAdmin">
       <created>1666199517142</created>
@@ -318,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668102387818</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Remove checkin functionality">
+      <created>1668611621140</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668611621140</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +352,8 @@
     <MESSAGE value="Add running configuration files" />
     <MESSAGE value="Successful results for 10 clients, has problem with 5 clients" />
     <MESSAGE value="Add docker-compos-fl-trainer.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add docker-compos-fl-trainer.yml" />
+    <MESSAGE value="Remove checkin functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove checkin functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

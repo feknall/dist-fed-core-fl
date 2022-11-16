@@ -20,17 +20,3 @@ class Config:
     # client_address = '127.0.0.1'
     # buffer_size = 4096
     # client_base_port = 9500
-
-
-class ClientConfig(Config):
-    pass
-
-
-class ServerConfig(Config):
-    def __init__(self, server_index):
-        self.server_index = server_index
-
-
-class MasterConfig(Config):
-    def __init__(self, master_server_index):
-        self.master_server_index = master_server_index
