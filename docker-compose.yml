@@ -24,18 +24,6 @@ services:
         - "localhost"
         - "8092"
     network_mode: "host"
-  leadAggregator:
-    container_name: fl-leadAggregator.org2.example.com
-    image: hmaid/hyperledger:dist-fed-core-fl
-    tty: true
-    stdin_open: true
-    labels:
-      service: leadAggregator-core
-    command:
-      - "leadAggregator"
-      - "localhost"
-      - "8082"
-    network_mode: "host"
   flAdmin:
     container_name: fl-flAdmin.org2.example.com
     image: hmaid/hyperledger:dist-fed-core-fl

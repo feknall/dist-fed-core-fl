@@ -1,3 +1,23 @@
+class FedAvgModelMetadata:
+    modelId = None
+    name = None
+    clientsPerRound = None
+    status = None
+    trainingRounds = None
+    currentRound = None
+
+    def __init__(self, modelId, name, clientsPerRound, trainingRounds, status=None,
+                 currentRound=None):
+        self.modelId = modelId
+        self.name = name
+        self.clientsPerRound = clientsPerRound
+        self.status = status
+        self.trainingRounds = trainingRounds
+        self.currentRound = currentRound
+
+    def to_map(self):
+        return self.__dict__
+
 class ModelMetadata:
     modelId = None
     name = None
@@ -47,12 +67,41 @@ class ModelSecretRequest:
         self.weights1 = weights1
         self.weights2 = weights2
 
+    def to_map(self):
+        return self.__dict__
+
+
+class OriginalModelRequest:
+    modelId = None
+    weights = None
+    datasetSize = None
+
+    def __init__(self, modelId, datasetSize, weights):
+        self.modelId = modelId
+        self.datasetSize = datasetSize
+        self.weights = weights
 
     def to_map(self):
         return self.__dict__
 
 
 class ModelSecretResponse:
+    modelId = None
+    round = None
+    weights = None
+    datasetSize = None
+
+    def __init__(self, modelId, datasetSize=None, round=None, weights=None):
+        self.modelId = modelId
+        self.round = round
+        self.weights = weights
+        self.datasetSize = datasetSize
+
+    def to_map(self):
+        return self.__dict__
+
+
+class OriginalModelResponse:
     modelId = None
     round = None
     weights = None
@@ -82,6 +131,13 @@ class AggregatedSecretList:
         self.aggregatedSecretList = aggregatedSecretList
 
 
+class OriginalModelList:
+    originalModelList = None
+
+    def __init__(self, originalModelList):
+        self.originalModelList = originalModelList
+
+
 class CheckInList:
     checkedInTrainers = None
 
@@ -90,6 +146,20 @@ class CheckInList:
 
 
 class AggregatedSecret:
+    modelId = None
+    weights = None
+    round = None
+
+    def __init__(self, modelId, weights=None, round=None):
+        self.modelId = modelId
+        self.weights = weights
+        self.round = round
+
+    def to_map(self):
+        return self.__dict__
+
+
+class OriginalModel:
     modelId = None
     weights = None
     round = None

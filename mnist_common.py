@@ -14,7 +14,7 @@ def load_train_dataset(n_clients=3, permute=False):
 
     (x_train, y_train), (_, _) = mnist.load_data()
 
-    x_train = x_train.reshape(x_train.shape[0], feature_vector_length)
+    x_train = x_train.reshape(x_train.shape[0], feature_vector_length)[:100]
 
     if permute == True:
         permutation_indexes = np.random.permutation(len(x_train))

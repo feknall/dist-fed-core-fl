@@ -1,0 +1,228 @@
+version: "3.9"
+services:
+    leadAggregator:
+      container_name: fl-leadAggregator.org2.example.com
+      image: hmaid/hyperledger:dist-fed-core-fl
+      tty: true
+      stdin_open: true
+      labels:
+        service: leadAggregator-core
+      command:
+        - "leadAggregator"
+        - "localhost"
+        - "8082"
+        - "1"
+      network_mode: "host"
+    trainer1:
+        container_name: fl-trainer1.example.com
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6001"
+          - "0"
+          - "0"
+        network_mode: "host"
+    trainer2:
+        container_name: fl-trainer2.example.com
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6002"
+          - "0"
+          - "1"
+        network_mode: "host"
+    trainer3:
+        container_name: fl-trainer3.example.com
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6003"
+          - "0"
+          - "2"
+        network_mode: "host"
+    trainer4:
+        container_name: fl-trainer4.example.com
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6004"
+          - "0"
+          - "3"
+        network_mode: "host"
+#    trainer5:
+#        container_name: fl-trainer5.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6005"
+#          - "4"
+#        network_mode: "host"
+#    trainer6:
+#        container_name: fl-trainer6.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6006"
+#          - "5"
+#        network_mode: "host"
+#    trainer7:
+#        container_name: fl-trainer7.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6007"
+#          - "6"
+#        network_mode: "host"
+#    trainer8:
+#        container_name: fl-trainer8.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6008"
+#          - "7"
+#        network_mode: "host"
+#    trainer9:
+#        container_name: fl-trainer9.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6009"
+#          - "8"
+#        network_mode: "host"
+#    trainer10:
+#        container_name: fl-trainer10.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6010"
+#          - "9"
+#        network_mode: "host"
+#    trainer11:
+#        container_name: fl-trainer11.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6011"
+#          - "10"
+#        network_mode: "host"
+#    trainer12:
+#        container_name: fl-trainer12.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6012"
+#          - "11"
+#        network_mode: "host"
+#    trainer13:
+#        container_name: fl-trainer13.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6013"
+#          - "12"
+#        network_mode: "host"
+#    trainer14:
+#        container_name: fl-trainer14.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6014"
+#          - "13"
+#        network_mode: "host"
+#    trainer15:
+#        container_name: fl-trainer15.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6015"
+#          - "14"
+#        network_mode: "host"
+#    trainer16:
+#        container_name: fl-trainer16.example.com
+#        image: hmaid/hyperledger:dist-fed-core-fl
+#        tty: true
+#        stdin_open: true
+#        labels:
+#          service: trainer-core
+#        command:
+#          - "trainer"
+#          - "localhost"
+#          - "6016"
+#          - "15"
+#        network_mode: "host"
+    

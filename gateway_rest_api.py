@@ -1,17 +1,18 @@
 import json
-import time
 
 import requests
 
-from utils import log_msg, log_json
 from dto import EndRoundModel, PersonalInfo
+from utils import log_msg, log_json
 
 
 class GatewayRestApi:
     base_url = None
 
-    def __init__(self, base_url):
+    def __init__(self, base_url, prefix):
         self.base_url = base_url
+        self.prefix = prefix
+        self.prefix_url = base_url + prefix
 
     def get_end_round_model_base(self, model_id: str, req_addr) -> EndRoundModel:
         log_msg("Getting end round model...")

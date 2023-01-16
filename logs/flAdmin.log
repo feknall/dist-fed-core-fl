@@ -1,365 +1,0 @@
-Container fl-flAdmin.org2.example.com  Creating
-Container fl-flAdmin.org2.example.com  Created
-Attaching to fl-flAdmin.org2.example.com
-fl-flAdmin.org2.example.com  | 2022-11-09 14:00:34.781472: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
-fl-flAdmin.org2.example.com  | To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-fl-flAdmin.org2.example.com  | Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
-fl-flAdmin.org2.example.com  |     8192/11490434 [..............................] - ETA: 0s  106496/11490434 [..............................] - ETA: 6s  368640/11490434 [..............................] - ETA: 3s  712704/11490434 [>.............................] - ETA: 2s 1064960/11490434 [=>............................] - ETA: 2s 1245184/11490434 [==>...........................] - ETA: 2s 1556480/11490434 [===>..........................] - ETA: 2s 1867776/11490434 [===>..........................] - ETA: 1s 2293760/11490434 [====>.........................] - ETA: 1s 2605056/11490434 [=====>........................] - ETA: 1s 2899968/11490434 [======>.......................] - ETA: 1s 3293184/11490434 [=======>......................] - ETA: 1s 3670016/11490434 [========>.....................] - ETA: 1s 4177920/11490434 [=========>....................] - ETA: 1s 4521984/11490434 [==========>...................] - ETA: 1s 4898816/11490434 [===========>..................] - ETA: 1s 5193728/11490434 [============>.................] - ETA: 1s 5570560/11490434 [=============>................] - ETA: 0s 5914624/11490434 [==============>...............] - ETA: 0s 6209536/11490434 [===============>..............] - ETA: 0s 6504448/11490434 [===============>..............] - ETA: 0s 6848512/11490434 [================>.............] - ETA: 0s 7159808/11490434 [=================>............] - ETA: 0s 7340032/11490434 [==================>...........] - ETA: 0s 7454720/11490434 [==================>...........] - ETA: 0s 7684096/11490434 [===================>..........] - ETA: 0s 7815168/11490434 [===================>..........] - ETA: 0s 7962624/11490434 [===================>..........] - ETA: 0s 8110080/11490434 [====================>.........] - ETA: 0s 8585216/11490434 [=====================>........] - ETA: 0s 8912896/11490434 [======================>.......] - ETA: 0s 9240576/11490434 [=======================>......] - ETA: 0s 9666560/11490434 [========================>.....] - ETA: 0s10010624/11490434 [=========================>....] - ETA: 0s10420224/11490434 [==========================>...] - ETA: 0s10813440/11490434 [===========================>..] - ETA: 0s11304960/11490434 [============================>.] - ETA: 0s11490434/11490434 [==============================] - 2s 0us/step
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mChecking user has fl admin attribute ...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mStart listening to events...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/general/checkHasFlAdminAttribute[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mResponse: b'true'[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mGetting personal info...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getPersonalInfo[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mSending creating a model metadata...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest /flAdmin/createModelMetadata:[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"modelId"[0m:[0m [0;38;5;124m"96885"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"name"[0m:[0m [0;38;5;124m"model1"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"clientsPerRound"[0m:[0m [0;38;5;124m"2"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"secretsPerClient"[0m:[0m [0;38;5;124m"2"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;28;1mnull[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"trainingRounds"[0m:[0m [0;38;5;124m"10"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"currentRound"[0m:[0m [0;38;5;28;1mnull[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m}[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mResponse:[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"currentRound"[0m:[0m [0;38;5;241m0[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"modelId"[0m:[0m [0;38;5;124m"96885"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"clientsPerRound"[0m:[0m [0;38;5;241m2[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"secretsPerClient"[0m:[0m [0;38;5;241m2[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"trainingRounds"[0m:[0m [0;38;5;241m10[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"name"[0m:[0m [0;38;5;124m"model1"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"initiated"[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m}[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mSending start training...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/startTraining[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"modelId"[0m:[0m [0;38;5;124m"96885"[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m}[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m
-fl-flAdmin.org2.example.com  | [0mname: "CREATE_MODEL_METADATA_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"initiated\",\"trainingRounds\":10,\"currentRound\":0}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mEVENT: A model is created. modelId: 96885[0m
-fl-flAdmin.org2.example.com  | [0mname: "START_TRAINING_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":0}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mEVENT: A model training started. modelId: 96885[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mResponse:[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0m  [0m{[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"currentRound"[0m:[0m [0;38;5;241m0[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"modelId"[0m:[0m [0;38;5;124m"96885"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"clientsPerRound"[0m:[0m [0;38;5;241m2[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"secretsPerClient"[0m:[0m [0;38;5;241m2[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"trainingRounds"[0m:[0m [0;38;5;241m10[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"name"[0m:[0m [0;38;5;124m"model1"[0m,[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m  [0;38;5;28;1m"status"[0m:[0m [0;38;5;124m"started"[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m}[0m[0m
-fl-flAdmin.org2.example.com  | [0m  [0m[0m
-fl-flAdmin.org2.example.com  | [0mname: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":0}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":0}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m2022-11-09 14:00:55.804691: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
-fl-flAdmin.org2.example.com  | To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-fl-flAdmin.org2.example.com  |   1/313 [..............................] - ETA: 1:38 - loss: 1.2279 - accuracy: 0.7500 28/313 [=>............................] - ETA: 0s - loss: 1.2555 - accuracy: 0.7243   56/313 [====>.........................] - ETA: 0s - loss: 1.2827 - accuracy: 0.7070 78/313 [======>.......................] - ETA: 0s - loss: 1.2853 - accuracy: 0.7099 98/313 [========>.....................] - ETA: 0s - loss: 1.2811 - accuracy: 0.7114118/313 [==========>...................] - ETA: 0s - loss: 1.2835 - accuracy: 0.7074138/313 [============>.................] - ETA: 0s - loss: 1.2805 - accuracy: 0.7120157/313 [==============>...............] - ETA: 0s - loss: 1.2759 - accuracy: 0.7136178/313 [================>.............] - ETA: 0s - loss: 1.2610 - accuracy: 0.7166198/313 [=================>............] - ETA: 0s - loss: 1.2509 - accuracy: 0.7205218/313 [===================>..........] - ETA: 0s - loss: 1.2460 - accuracy: 0.7232238/313 [=====================>........] - ETA: 0s - loss: 1.2412 - accuracy: 0.7266258/313 [=======================>......] - ETA: 0s - loss: 1.2333 - accuracy: 0.7329279/313 [=========================>....] - ETA: 0s - loss: 1.2234 - accuracy: 0.7363297/313 [===========================>..] - ETA: 0s - loss: 1.2154 - accuracy: 0.7394313/313 [==============================] - 1s 2ms/step - loss: 1.2194 - accuracy: 0.7398
-fl-flAdmin.org2.example.com  | Time: 1668002457.0729208
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":1}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":1}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 1:34 - loss: 0.0565 - accuracy: 0.9688 29/313 [=>............................] - ETA: 0s - loss: 0.1022 - accuracy: 0.9688   58/313 [====>.........................] - ETA: 0s - loss: 0.1446 - accuracy: 0.9596 86/313 [=======>......................] - ETA: 0s - loss: 0.1473 - accuracy: 0.9564113/313 [=========>....................] - ETA: 0s - loss: 0.1383 - accuracy: 0.9605138/313 [============>.................] - ETA: 0s - loss: 0.1449 - accuracy: 0.9563162/313 [==============>...............] - ETA: 0s - loss: 0.1408 - accuracy: 0.9570184/313 [================>.............] - ETA: 0s - loss: 0.1319 - accuracy: 0.9604205/313 [==================>...........] - ETA: 0s - loss: 0.1273 - accuracy: 0.9613225/313 [====================>.........] - ETA: 0s - loss: 0.1228 - accuracy: 0.9629244/313 [======================>.......] - ETA: 0s - loss: 0.1160 - accuracy: 0.9652263/313 [========================>.....] - ETA: 0s - loss: 0.1143 - accuracy: 0.9651284/313 [==========================>...] - ETA: 0s - loss: 0.1083 - accuracy: 0.9668305/313 [============================>.] - ETA: 0s - loss: 0.1059 - accuracy: 0.9676313/313 [==============================] - 1s 2ms/step - loss: 0.1090 - accuracy: 0.9672
-fl-flAdmin.org2.example.com  | Time: 1668002467.8120248
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":2}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":2}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 2:14 - loss: 0.0711 - accuracy: 0.9688 23/313 [=>............................] - ETA: 0s - loss: 0.0977 - accuracy: 0.9769   46/313 [===>..........................] - ETA: 0s - loss: 0.1173 - accuracy: 0.9701 68/313 [=====>........................] - ETA: 0s - loss: 0.1343 - accuracy: 0.9646 87/313 [=======>......................] - ETA: 0s - loss: 0.1320 - accuracy: 0.9648112/313 [=========>....................] - ETA: 0s - loss: 0.1291 - accuracy: 0.9643144/313 [============>.................] - ETA: 0s - loss: 0.1297 - accuracy: 0.9629176/313 [===============>..............] - ETA: 0s - loss: 0.1173 - accuracy: 0.9652209/313 [===================>..........] - ETA: 0s - loss: 0.1131 - accuracy: 0.9665241/313 [======================>.......] - ETA: 0s - loss: 0.1011 - accuracy: 0.9704272/313 [=========================>....] - ETA: 0s - loss: 0.0955 - accuracy: 0.9719303/313 [============================>.] - ETA: 0s - loss: 0.0899 - accuracy: 0.9737313/313 [==============================] - 1s 2ms/step - loss: 0.0923 - accuracy: 0.9728
-fl-flAdmin.org2.example.com  | Time: 1668002478.610458
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":3}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":3}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 1:13 - loss: 0.0046 - accuracy: 1.0000 29/313 [=>............................] - ETA: 0s - loss: 0.0828 - accuracy: 0.9709   59/313 [====>.........................] - ETA: 0s - loss: 0.1165 - accuracy: 0.9666 88/313 [=======>......................] - ETA: 0s - loss: 0.1187 - accuracy: 0.9673116/313 [==========>...................] - ETA: 0s - loss: 0.1156 - accuracy: 0.9679143/313 [============>.................] - ETA: 0s - loss: 0.1171 - accuracy: 0.9670168/313 [===============>..............] - ETA: 0s - loss: 0.1075 - accuracy: 0.9695192/313 [=================>............] - ETA: 0s - loss: 0.1038 - accuracy: 0.9714211/313 [===================>..........] - ETA: 0s - loss: 0.1011 - accuracy: 0.9717229/313 [====================>.........] - ETA: 0s - loss: 0.0945 - accuracy: 0.9734249/313 [======================>.......] - ETA: 0s - loss: 0.0904 - accuracy: 0.9744269/313 [========================>.....] - ETA: 0s - loss: 0.0887 - accuracy: 0.9744288/313 [==========================>...] - ETA: 0s - loss: 0.0852 - accuracy: 0.9757308/313 [============================>.] - ETA: 0s - loss: 0.0852 - accuracy: 0.9756313/313 [==============================] - 1s 2ms/step - loss: 0.0848 - accuracy: 0.9757
-fl-flAdmin.org2.example.com  | Time: 1668002489.9702716
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":4}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":4}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 1:44 - loss: 0.0066 - accuracy: 1.0000 30/313 [=>............................] - ETA: 0s - loss: 0.0877 - accuracy: 0.9729   57/313 [====>.........................] - ETA: 0s - loss: 0.1031 - accuracy: 0.9682 83/313 [======>.......................] - ETA: 0s - loss: 0.1127 - accuracy: 0.9665109/313 [=========>....................] - ETA: 0s - loss: 0.1015 - accuracy: 0.9696135/313 [===========>..................] - ETA: 0s - loss: 0.1077 - accuracy: 0.9676159/313 [==============>...............] - ETA: 0s - loss: 0.1020 - accuracy: 0.9686183/313 [================>.............] - ETA: 0s - loss: 0.0941 - accuracy: 0.9715204/313 [==================>...........] - ETA: 0s - loss: 0.0903 - accuracy: 0.9727223/313 [====================>.........] - ETA: 0s - loss: 0.0878 - accuracy: 0.9742243/313 [======================>.......] - ETA: 0s - loss: 0.0819 - accuracy: 0.9761263/313 [========================>.....] - ETA: 0s - loss: 0.0791 - accuracy: 0.9769283/313 [==========================>...] - ETA: 0s - loss: 0.0745 - accuracy: 0.9782302/313 [===========================>..] - ETA: 0s - loss: 0.0719 - accuracy: 0.9793313/313 [==============================] - 1s 2ms/step - loss: 0.0764 - accuracy: 0.9781
-fl-flAdmin.org2.example.com  | Time: 1668002504.5497692
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":5}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":5}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 1:18 - loss: 0.0184 - accuracy: 1.0000 30/313 [=>............................] - ETA: 0s - loss: 0.0973 - accuracy: 0.9760   58/313 [====>.........................] - ETA: 0s - loss: 0.1176 - accuracy: 0.9704 86/313 [=======>......................] - ETA: 0s - loss: 0.1240 - accuracy: 0.9684113/313 [=========>....................] - ETA: 0s - loss: 0.1173 - accuracy: 0.9701139/313 [============>.................] - ETA: 0s - loss: 0.1149 - accuracy: 0.9703166/313 [==============>...............] - ETA: 0s - loss: 0.1063 - accuracy: 0.9712194/313 [=================>............] - ETA: 0s - loss: 0.1017 - accuracy: 0.9731215/313 [===================>..........] - ETA: 0s - loss: 0.0979 - accuracy: 0.9740235/313 [=====================>........] - ETA: 0s - loss: 0.0907 - accuracy: 0.9758250/313 [======================>.......] - ETA: 0s - loss: 0.0862 - accuracy: 0.9768269/313 [========================>.....] - ETA: 0s - loss: 0.0827 - accuracy: 0.9777289/313 [==========================>...] - ETA: 0s - loss: 0.0786 - accuracy: 0.9789309/313 [============================>.] - ETA: 0s - loss: 0.0795 - accuracy: 0.9790313/313 [==============================] - 1s 2ms/step - loss: 0.0794 - accuracy: 0.9789
-fl-flAdmin.org2.example.com  | Time: 1668002514.6929948
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":6}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":6}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 1:41 - loss: 0.0175 - accuracy: 1.0000 29/313 [=>............................] - ETA: 0s - loss: 0.0796 - accuracy: 0.9838   56/313 [====>.........................] - ETA: 0s - loss: 0.1034 - accuracy: 0.9782 83/313 [======>.......................] - ETA: 0s - loss: 0.1131 - accuracy: 0.9763110/313 [=========>....................] - ETA: 0s - loss: 0.1036 - accuracy: 0.9770136/313 [============>.................] - ETA: 0s - loss: 0.1126 - accuracy: 0.9747158/313 [==============>...............] - ETA: 0s - loss: 0.1055 - accuracy: 0.9759179/313 [================>.............] - ETA: 0s - loss: 0.0989 - accuracy: 0.9777193/313 [=================>............] - ETA: 0s - loss: 0.0973 - accuracy: 0.9775214/313 [===================>..........] - ETA: 0s - loss: 0.0943 - accuracy: 0.9782230/313 [=====================>........] - ETA: 0s - loss: 0.0882 - accuracy: 0.9796248/313 [======================>.......] - ETA: 0s - loss: 0.0839 - accuracy: 0.9803266/313 [========================>.....] - ETA: 0s - loss: 0.0797 - accuracy: 0.9812284/313 [==========================>...] - ETA: 0s - loss: 0.0772 - accuracy: 0.9818305/313 [============================>.] - ETA: 0s - loss: 0.0758 - accuracy: 0.9822313/313 [==============================] - 1s 2ms/step - loss: 0.0764 - accuracy: 0.9821
-fl-flAdmin.org2.example.com  | Time: 1668002525.3367665
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":7}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":7}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 2:04 - loss: 0.0018 - accuracy: 1.0000 26/313 [=>............................] - ETA: 0s - loss: 0.1058 - accuracy: 0.9832   51/313 [===>..........................] - ETA: 0s - loss: 0.1300 - accuracy: 0.9730 76/313 [======>.......................] - ETA: 0s - loss: 0.1307 - accuracy: 0.9688101/313 [========>.....................] - ETA: 0s - loss: 0.1348 - accuracy: 0.9706123/313 [==========>...................] - ETA: 0s - loss: 0.1388 - accuracy: 0.9700143/313 [============>.................] - ETA: 0s - loss: 0.1343 - accuracy: 0.9703158/313 [==============>...............] - ETA: 0s - loss: 0.1260 - accuracy: 0.9715176/313 [===============>..............] - ETA: 0s - loss: 0.1149 - accuracy: 0.9737194/313 [=================>............] - ETA: 0s - loss: 0.1145 - accuracy: 0.9737214/313 [===================>..........] - ETA: 0s - loss: 0.1105 - accuracy: 0.9744232/313 [=====================>........] - ETA: 0s - loss: 0.1023 - accuracy: 0.9764253/313 [=======================>......] - ETA: 0s - loss: 0.0958 - accuracy: 0.9775273/313 [=========================>....] - ETA: 0s - loss: 0.0904 - accuracy: 0.9784294/313 [===========================>..] - ETA: 0s - loss: 0.0868 - accuracy: 0.9794313/313 [==============================] - 1s 2ms/step - loss: 0.0880 - accuracy: 0.9791
-fl-flAdmin.org2.example.com  | Time: 1668002535.940125
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":8}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":8}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 2:12 - loss: 0.0022 - accuracy: 1.0000 19/313 [>.............................] - ETA: 0s - loss: 0.0718 - accuracy: 0.9868   39/313 [==>...........................] - ETA: 0s - loss: 0.1026 - accuracy: 0.9792 59/313 [====>.........................] - ETA: 0s - loss: 0.1024 - accuracy: 0.9778 78/313 [======>.......................] - ETA: 0s - loss: 0.1073 - accuracy: 0.9744 99/313 [========>.....................] - ETA: 0s - loss: 0.1100 - accuracy: 0.9738119/313 [==========>...................] - ETA: 0s - loss: 0.1132 - accuracy: 0.9745139/313 [============>.................] - ETA: 0s - loss: 0.1130 - accuracy: 0.9737159/313 [==============>...............] - ETA: 0s - loss: 0.1077 - accuracy: 0.9737179/313 [================>.............] - ETA: 0s - loss: 0.1016 - accuracy: 0.9757200/313 [==================>...........] - ETA: 0s - loss: 0.0989 - accuracy: 0.9764220/313 [====================>.........] - ETA: 0s - loss: 0.0994 - accuracy: 0.9767240/313 [======================>.......] - ETA: 0s - loss: 0.0918 - accuracy: 0.9785260/313 [=======================>......] - ETA: 0s - loss: 0.0868 - accuracy: 0.9796280/313 [=========================>....] - ETA: 0s - loss: 0.0817 - accuracy: 0.9807300/313 [===========================>..] - ETA: 0s - loss: 0.0797 - accuracy: 0.9812313/313 [==============================] - 1s 3ms/step - loss: 0.0841 - accuracy: 0.9806
-fl-flAdmin.org2.example.com  | Time: 1668002547.3410957
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":9}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "ROUND_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":9}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | [0m[?7h[0;35mGetting end round model...[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mRequest address: http://localhost:8083/flAdmin/getEndRoundModel[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35m<Response [200]>[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mHas weight? YES[0m
-fl-flAdmin.org2.example.com  | [0m[0m[?7h[0;35mModel Id: 96885[0m
-fl-flAdmin.org2.example.com  | [0m  1/313 [..............................] - ETA: 1:26 - loss: 0.0014 - accuracy: 1.0000 29/313 [=>............................] - ETA: 0s - loss: 0.0725 - accuracy: 0.9838   55/313 [====>.........................] - ETA: 0s - loss: 0.1032 - accuracy: 0.9756 81/313 [======>.......................] - ETA: 0s - loss: 0.1072 - accuracy: 0.9738109/313 [=========>....................] - ETA: 0s - loss: 0.1105 - accuracy: 0.9742137/313 [============>.................] - ETA: 0s - loss: 0.1161 - accuracy: 0.9731163/313 [==============>...............] - ETA: 0s - loss: 0.1043 - accuracy: 0.9749186/313 [================>.............] - ETA: 0s - loss: 0.0987 - accuracy: 0.9763206/313 [==================>...........] - ETA: 0s - loss: 0.0956 - accuracy: 0.9772226/313 [====================>.........] - ETA: 0s - loss: 0.0928 - accuracy: 0.9782246/313 [======================>.......] - ETA: 0s - loss: 0.0858 - accuracy: 0.9798267/313 [========================>.....] - ETA: 0s - loss: 0.0818 - accuracy: 0.9802286/313 [==========================>...] - ETA: 0s - loss: 0.0777 - accuracy: 0.9812305/313 [============================>.] - ETA: 0s - loss: 0.0785 - accuracy: 0.9816313/313 [==============================] - 1s 2ms/step - loss: 0.0802 - accuracy: 0.9810
-fl-flAdmin.org2.example.com  | Time: 1668002556.120656
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "MODEL_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10,\"datasetSize\":30000}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "AGGREGATED_SECRET_ADDED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"round\":10}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com  | name: "TRAINING_FINISHED_EVENT"
-fl-flAdmin.org2.example.com  | payload: "{\"modelId\":\"96885\",\"name\":\"model1\",\"clientsPerRound\":2,\"secretsPerClient\":2,\"status\":\"started\",\"trainingRounds\":10,\"currentRound\":10}"
-fl-flAdmin.org2.example.com  | 
-fl-flAdmin.org2.example.com exited with code 0

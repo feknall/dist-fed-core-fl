@@ -1,5 +1,5 @@
 s = ""
-for trainer_id in range(1, 11):
+for trainer_id in range(1, 17):
     port = trainer_id + 6000
     s += f"""trainer{trainer_id}:
         container_name: trainer{trainer_id}.example.com
@@ -9,6 +9,7 @@ for trainer_id in range(1, 11):
         volumes:
           - ${{DIST_FED_CREDENTIAL_HOME}}:/credential
         command:
+          - "--fl.chaincode.name=fedavg-chaincode"
           - "--fl.role=trainer"
           - "--trainer.org1.cert.path=/credential/peerOrganizations/org1.example.com/users/Trainer{trainer_id}@org1.example.com/msp/signcerts/cert.pem"
           - "--trainer.org1.key-dir.path=/credential/peerOrganizations/org1.example.com/users/Trainer{trainer_id}@org1.example.com/msp/keystore"

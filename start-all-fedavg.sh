@@ -1,13 +1,11 @@
 #!/bin/bash
 
 echo "Stopping all entities..."
-docker compose -f docker-compose-fl-fedshare.yml down
+docker compose -f docker-compose-fl-fedavg.yml down
 docker compose down
 
 echo "Starting all entities..."
-docker compose -f docker-compose-fl-fedshare.yml up -d
-docker compose up aggregatorOrg1 -d
-docker compose up aggregatorOrg2 -d
+docker compose -f docker-compose-fl-fedavg.yml up -d
 
 echo "Waiting 10 seconds..."
 sleep 10

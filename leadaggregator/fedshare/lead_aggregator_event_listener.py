@@ -3,7 +3,7 @@ import threading
 
 import websockets
 
-from aggregator.aggregator_event_processor import AggregatorEventProcessor
+from leadaggregator.fedshare.lead_aggregator_event_processor import LeadAggregatorEventProcessor
 from utils import log_msg
 from info_pb2 import Event
 
@@ -17,7 +17,7 @@ ENOUGH_CLIENTS_CHECKED_IN_EVENT = "ENOUGH_CLIENTS_CHECKED_IN_EVENT"
 AGGREGATED_SECRET_ADDED_EVENT = "AGGREGATED_SECRET_ADDED_EVENT"
 
 
-async def process_socket_events(aggregator: AggregatorEventProcessor, websocket_address):
+async def process_socket_events(lead_aggregator: LeadAggregatorEventProcessor, websocket_address):
     log_msg("Start listening to events...")
     async with websockets.connect(websocket_address) as websocket:
         async for message in websocket:
@@ -26,18 +26,18 @@ async def process_socket_events(aggregator: AggregatorEventProcessor, websocket_
             print(event)
             event_name = event.name
             event_payload = event.payload
-            if event_name == MODEL_SECRET_ADDED_EVENT:
-                aggregator.model_secret_added(event_payload)
+            if event_name == AGGREGATED_SECRET_ADDED_EVENT:
+                lead_aggregator.aggregated_secret_added_event(event_payload)
             elif event_name == START_TRAINING_EVENT:
-                aggregator.start_training_event(event_payload)
+                lead_aggregator.start_training_event(event_payload)
             elif event_name == TRAINING_FINISHED_EVENT:
-                aggregator.training_finished(event_payload)
+                lead_aggregator.training_finished(event_payload)
 
 
-def run(aggregator: AggregatorEventProcessor, websocket_address):
-    asyncio.run(process_socket_events(aggregator, websocket_address))
+def run(lead_aggregator: LeadAggregatorEventProcessor, websocket_address):
+    asyncio.run(process_socket_events(lead_aggregator, websocket_address))
 
 
-def listen(aggregator: AggregatorEventProcessor, websocket_address):
-    thread = threading.Thread(target=run, args=(aggregator, websocket_address))
+def listen(lead_aggregator: LeadAggregatorEventProcessor, websocket_address):
+    thread = threading.Thread(target=run, args=(lead_aggregator, websocket_address))
     thread.start()
