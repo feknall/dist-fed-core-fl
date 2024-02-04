@@ -16,7 +16,6 @@ config = Config()
 client_datasets = mnist_common.load_train_dataset(config.number_of_clients, permute=True)
 
 highest_range = np.finfo('float16').max
-# field_size = np.finfo('float32').max
 
 time_list = []
 
@@ -58,13 +57,13 @@ class TrainerEventProcessor(EventProcessor):
 
             for server_index in range(self.secretsPerClient - 1):
                 shares_dict[layer_index][server_index] = \
-                    np.random.uniform(low=-highest_range, high=highest_range, size=layer_shape[layer_index]).astype(np.float32)
+                    np.random.uniform(low=-highest_range, high=highest_range, size=layer_shape[layer_index]).astype(
+                        np.float32)
 
-            share_sum_except_last = np.array(shares_dict[layer_index][:self.secretsPerClient - 1]).sum(axis=0,
-                                                                                                       dtype=np.float32)
+            share_sum_except_last = np.array(shares_dict[layer_index][:self.secretsPerClient - 1]) \
+                .sum(axis=0, dtype=np.float32)
             x = np.copy(np.array(layer_dict[layer_index], dtype=np.float32))
             diff = np.subtract(x, share_sum_except_last, dtype=np.float32)
-            # last_share = np.fmod(diff, field_size, dtype=np.float32)
             shares_dict[layer_index][self.secretsPerClient - 1] = diff
 
         all_servers = []

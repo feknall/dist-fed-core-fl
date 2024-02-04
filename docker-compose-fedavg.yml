@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  leadAggregator:
+    container_name: fl-leadAggregator
+    image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
+    labels:
+      service: leadAggregator-core
+    command:
+      - "leadAggregator"
+      - "localhost"
+      - "8082"
+      - "1"
+    network_mode: "host"
+  flAdmin:
+    container_name: fl-flAdmin
+    image: hmaid/hyperledger:dist-fed-core-fl
+    tty: true
+    stdin_open: true
+    labels:
+      service: flAdmin-core
+    command:
+      - "flAdmin"
+      - "localhost"
+      - "8083"
+      - "1"
+    network_mode: "host"

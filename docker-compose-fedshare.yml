@@ -11,6 +11,7 @@ services:
       - "aggregator"
       - "localhost"
       - "8091"
+      - "0"
     network_mode: "host"
   aggregatorOrg2:
     container_name: fl-aggregator.org2.example.com
@@ -23,6 +24,7 @@ services:
         - "aggregator"
         - "localhost"
         - "8092"
+        - "0"
     network_mode: "host"
   flAdmin:
     container_name: fl-flAdmin.org2.example.com
@@ -35,4 +37,5 @@ services:
       - "flAdmin"
       - "localhost"
       - "8083"
+      - "0"
     network_mode: "host"

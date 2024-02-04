@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEST="report/exp2-clients-16"
+DEST="report/exp2-clients-4"
 mkdir $DEST
 touch $DEST/result.txt
 docker compose logs trainer1 2>&1 | grep trainer_time_list | cut -f 2 -d '|' | sed "s,\x1B\[[0-9;|\\?]*[a-zA-Z],,g" | xargs >> $DEST/result.txt

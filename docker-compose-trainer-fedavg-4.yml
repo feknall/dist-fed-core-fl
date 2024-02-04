@@ -1,0 +1,58 @@
+version: "3.9"
+services:
+    trainer1:
+        container_name: fl-trainer1
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6001"
+          - "0"
+          - "1"
+        network_mode: "host"
+    trainer2:
+        container_name: fl-trainer2
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6002"
+          - "1"
+          - "1"
+        network_mode: "host"
+    trainer3:
+        container_name: fl-trainer3
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6003"
+          - "2"
+          - "1"
+        network_mode: "host"
+    trainer4:
+        container_name: fl-trainer4
+        image: hmaid/hyperledger:dist-fed-core-fl
+        tty: true
+        stdin_open: true
+        labels:
+          service: trainer-core
+        command:
+          - "trainer"
+          - "localhost"
+          - "6004"
+          - "3"
+          - "1"
+        network_mode: "host"
