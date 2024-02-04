@@ -3,7 +3,7 @@ import json
 import pickle
 
 import mnist_common
-from fladmin.fedavg.fl_admin_gateway_rest_api import FlAdminGatewayRestApi
+from fladmin.fedshare.fl_admin_gateway_rest_api import FlAdminGatewayRestApi
 from flevents.event_processor import EventProcessor
 from dto import ModelMetadata
 from utils import log_msg

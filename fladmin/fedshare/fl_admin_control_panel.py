@@ -1,7 +1,7 @@
 from random import randint
 
 from config import Config
-from fladmin.fedavg.fl_admin_gateway_rest_api import FlAdminGatewayRestApi
+from fladmin.fedshare.fl_admin_gateway_rest_api import FlAdminGatewayRestApi
 from dto import ModelMetadata
 
 

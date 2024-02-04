@@ -5,7 +5,7 @@ import websockets
 
 from fladmin.fedavg.fl_admin_event_processor import FlAdminEventProcessor
 from utils import log_msg
-from info_pb2 import Event
+import info_pb2
 
 AGGREGATION_FINISHED_EVENT = "AGGREGATION_FINISHED_EVENT"
 ROUND_FINISHED_EVENT = "ROUND_FINISHED_EVENT"
@@ -21,7 +21,7 @@ async def process_socket_events(fl_admin: FlAdminEventProcessor, websocket_addre
     log_msg("Start listening to events...")
     async with websockets.connect(websocket_address) as websocket:
         async for message in websocket:
-            event = Event()
+            event = info_pb2.Event()
             event.ParseFromString(message)
             print(event)
             event_name = event.name

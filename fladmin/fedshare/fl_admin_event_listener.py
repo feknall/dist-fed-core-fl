@@ -3,7 +3,7 @@ import threading
 
 import websockets
 
-from fladmin.fedavg.fl_admin_event_processor import FlAdminEventProcessor
+from fladmin.fedshare.fl_admin_event_processor import FlAdminEventProcessor
 from utils import log_msg
 from info_pb2 import Event
 

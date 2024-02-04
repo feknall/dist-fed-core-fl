@@ -11,7 +11,7 @@ services:
         - "leadAggregator"
         - "localhost"
         - "8082"
-        - "1"
+        - "0"
       network_mode: "host"
     trainer1:
         container_name: fl-trainer1.example.com

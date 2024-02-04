@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.example.fljavagateway;
+
+message Event {
+  string name = 1;
+  bytes payload = 2;
+}
+
+message ModelSecret {
+  string modelId = 1;
+  string round = 2;
+  bytes weights1 = 3;
+  bytes weights2 = 4;
+}
