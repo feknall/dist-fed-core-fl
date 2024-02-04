@@ -7,7 +7,7 @@ from aggregator import aggregator_event_listener
 
 
 def run(address: str, port: str):
-    gateway_rest_api = AggregatorGatewayRestApi(f'http://{address}:{port}', False)
+    gateway_rest_api = AggregatorGatewayRestApi(f'http://{address}:{port}')
     websocket_address = f'ws://{address}:{port}'
 
     event_processor = AggregatorEventProcessor(gateway_rest_api=gateway_rest_api)
@@ -24,4 +24,4 @@ if __name__ == "__main__":
     address = sys.argv[1]
     port = sys.argv[2]
     fed_avg = True
-    run(address, port, fed_avg)
+    run(address, port)

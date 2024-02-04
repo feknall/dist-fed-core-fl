@@ -13,7 +13,9 @@ class FlAdminControlPanel:
 
     def create_model_metadata(self):
         cfg = Config()
-        body = ModelMetadata(self.modelId, "model1", str(cfg.number_of_clients),
+        body = ModelMetadata(self.modelId,
+                             "model1",
+                             str(cfg.number_of_clients),
                              str(cfg.number_of_servers),
                              str(cfg.training_rounds))
         self.gateway_rest_api.create_model_metadata(body)

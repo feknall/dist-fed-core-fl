@@ -16,7 +16,7 @@ class AggregatorGatewayRestApi(GatewayRestApi):
     def add_aggregated_secret(self, body: AggregatedSecret):
         log_msg("Adding aggregated secret...")
 
-        req_addr = self.base_url + '/addAggregatedSecret'
+        req_addr = self.prefix_url + '/addAggregatedSecret'
 
         response = requests.post(req_addr, json=body.to_map())
 
@@ -30,7 +30,7 @@ class AggregatorGatewayRestApi(GatewayRestApi):
     def get_model_secrets_for_current_round(self, model_id: str) -> list:
         log_msg("Sending reading model secrets for current round...")
 
-        req_addr = self.base_url + '/getModelSecretListForCurrentRound'
+        req_addr = self.prefix_url + '/getModelSecretListForCurrentRound'
         log_msg(f"Request address: {req_addr}")
 
         params = {
@@ -62,7 +62,7 @@ class AggregatorGatewayRestApi(GatewayRestApi):
             'modelId': model_id,
             'round': round
         }
-        req_addr = self.base_url + '/getModelSecretList'
+        req_addr = self.prefix_url + '/getModelSecretList'
         response = requests.get(req_addr, params=params)
 
         resp_json = {
@@ -74,7 +74,7 @@ class AggregatorGatewayRestApi(GatewayRestApi):
     def check_all_secrets_received(self, model_id: str):
         log_msg("Check all secrets received...")
 
-        req_addr = self.base_url + '/checkAllSecretsReceived'
+        req_addr = self.prefix_url + '/checkAllSecretsReceived'
 
         params = {
             'modelId': model_id
@@ -95,5 +95,5 @@ class AggregatorGatewayRestApi(GatewayRestApi):
             return False
 
     def get_personal_info_aggregator(self):
-        req_addr = self.base_url + '/getPersonalInfo'
+        req_addr = self.prefix_url + '/getPersonalInfo'
         return self.get_personal_info_single(req_addr)

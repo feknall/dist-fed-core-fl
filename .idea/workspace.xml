@@ -5,18 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9de3146d-3f27-41ff-9ceb-a4b752ed9129" name="Changes" comment="Fix bugs">
-      <change afterPath="$PROJECT_DIR$/info.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/aggregator0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/aggregator1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/fedavg_trainer_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/fedavg_trainer_02.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/flAdmin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/fl_admin_runner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/leadAggregator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/lead_aggregator_runner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/trainer_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/trainer_02.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-fedavg.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-fedavg.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-fedshare.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-fedshare.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-fl-fedshare.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-fl-fedshare.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fladmin/fedavg/fl_admin_event_listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fedavg/fl_admin_event_listener.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator/aggregator_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator/aggregator_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_control_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_control_panel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_event_listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_event_listener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_event_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_event_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info_pb2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_gateway_rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/fladmin/fedshare/fl_admin_gateway_rest_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start-all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start-all.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,100 +90,19 @@
       <recent name="$PROJECT_DIR$/trainer/fedshare" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.fl_admin_runner">
+  <component name="RunManager" selected="Compound.FedShare-C2">
     <configuration name="FedAvg-C2" type="CompoundRunConfigurationType">
       <toRun name="fedavg-trainer-01" type="PythonConfigurationType" />
       <toRun name="fedavg-trainer-02" type="PythonConfigurationType" />
       <toRun name="lead_aggregator_runner" type="PythonConfigurationType" />
       <method v="2" />
     </configuration>
-    <configuration name="fedavg-trainer-01" type="PythonConfigurationType" factoryName="Python">
-      <module name="dist-fed-core-fl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trainer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trainer/fedavg/trainer_runner.py" />
-      <option name="PARAMETERS" value="localhost 6001 0" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="fedavg-trainer-02" type="PythonConfigurationType" factoryName="Python">
-      <module name="dist-fed-core-fl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trainer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trainer/fedavg/trainer_runner.py" />
-      <option name="PARAMETERS" value="localhost 6002 1" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="fl_admin_runner" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
-      <output_file path="$PROJECT_DIR$/fl_admin_runner.log" is_save="true" />
-      <module name="dist-fed-core-fl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fladmin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fladmin/fedavg/fl_admin_runner.py" />
-      <option name="PARAMETERS" value="localhost 8083" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lead_aggregator_runner" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="dist-fed-core-fl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leadaggregator/fedavg" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leadaggregator/fedavg/lead_aggregator_runner.py" />
-      <option name="PARAMETERS" value="localhost 8082" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+    <configuration name="FedShare-C2" type="CompoundRunConfigurationType">
+      <toRun name="aggregator0" type="PythonConfigurationType" />
+      <toRun name="aggregator1" type="PythonConfigurationType" />
+      <toRun name="leadAggregator" type="PythonConfigurationType" />
+      <toRun name="trainer-01" type="PythonConfigurationType" />
+      <toRun name="trainer-02" type="PythonConfigurationType" />
       <method v="2" />
     </configuration>
     <configuration name="sample" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
@@ -233,17 +158,25 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Compound.FedShare-C2" />
       <item itemvalue="Compound.FedAvg-C2" />
       <item itemvalue="Python.fedavg-trainer-01" />
       <item itemvalue="Python.fedavg-trainer-02" />
       <item itemvalue="Python.fl_admin_runner" />
       <item itemvalue="Python.lead_aggregator_runner" />
+      <item itemvalue="Python.trainer-01" />
+      <item itemvalue="Python.trainer-02" />
+      <item itemvalue="Python.flAdmin" />
+      <item itemvalue="Python.leadAggregator" />
+      <item itemvalue="Python.aggregator0" />
+      <item itemvalue="Python.aggregator1" />
       <item itemvalue="Python.sample" />
       <item itemvalue="Shell Script.start.sh" />
       <item itemvalue="Shell Script.extract-report.sh" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.aggregator0" />
         <item itemvalue="Python.sample" />
         <item itemvalue="Shell Script.extract-report.sh" />
       </list>
@@ -288,7 +221,8 @@
       <workItem from="1676045123821" duration="4753000" />
       <workItem from="1676066461769" duration="6548000" />
       <workItem from="1676318297421" duration="1107000" />
-      <workItem from="1706974743550" duration="11317000" />
+      <workItem from="1706974743550" duration="11502000" />
+      <workItem from="1707063609694" duration="8367000" />
     </task>
     <task id="LOCAL-00001" summary="successful connection for flAdmin">
       <created>1666199517142</created>
@@ -430,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707011891752</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fix bugs">
+      <created>1707030730711</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1707030730711</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,28 +465,35 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FedBlockchain$trainer02_runner.coverage" NAME="trainer02_runner Coverage Results" MODIFIED="1666840019173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$leadAggregator.coverage" NAME="leadAggregator Coverage Results" MODIFIED="1707086023512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leadaggregator/fedavg" />
     <SUITE FILE_PATH="coverage/FedBlockchain$main.coverage" NAME="main Coverage Results" MODIFIED="1666238997495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/dist_fed_core_fl$fedavg_trainer_01.coverage" NAME="fedavg-trainer-01 Coverage Results" MODIFIED="1673907221600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$trainer_02.coverage" NAME="trainer-02 Coverage Results" MODIFIED="1707086023795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
     <SUITE FILE_PATH="coverage/FedBlockchain$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1667346985103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/identity/client" />
     <SUITE FILE_PATH="coverage/dist_fed_core_fl$fl_config_generator.coverage" NAME="fl_config_generator Coverage Results" MODIFIED="1668695561790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dist_fed_core_fl$config_generator.coverage" NAME="config_generator Coverage Results" MODIFIED="1668084920413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dist_fed_core_fl$trainer_runner.coverage" NAME="fedavg-trainer-01 Coverage Results" MODIFIED="1673721149764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
     <SUITE FILE_PATH="coverage/FedBlockchain$aggregator_runner.coverage" NAME="aggregator_org1_runner Coverage Results" MODIFIED="1666840022441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/aggregator" />
     <SUITE FILE_PATH="coverage/dist_fed_core_fl$fedavg_trainer_02.coverage" NAME="fedavg-trainer-02 Coverage Results" MODIFIED="1673907222075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
     <SUITE FILE_PATH="coverage/FedBlockchain$issuer.coverage" NAME="issuer Coverage Results" MODIFIED="1667410825069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FedBlockchain$agent.coverage" NAME="agent Coverage Results" MODIFIED="1662996172974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base/support" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$trainer_01.coverage" NAME="trainer-01 Coverage Results" MODIFIED="1707086023622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$sample.coverage" NAME="sample Coverage Results" MODIFIED="1673801522923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fladmin/fedavg" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$aggregator_runner.coverage" NAME="aggregator0 Coverage Results" MODIFIED="1707086023238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aggregator" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$lead_aggregator_runner.coverage" NAME="lead_aggregator_runner Coverage Results" MODIFIED="1673907222288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leadaggregator/fedavg" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$aggregator1.coverage" NAME="aggregator1 Coverage Results" MODIFIED="1707086023372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aggregator" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$fl_admin_runner.coverage" NAME="fl_admin_runner Coverage Results" MODIFIED="1673907261948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fladmin" />
+    <SUITE FILE_PATH="coverage/FedBlockchain$fl_admin_panel.coverage" NAME="fl_admin_panel Coverage Results" MODIFIED="1665008662369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/panel" />
+    <SUITE FILE_PATH="coverage/FedBlockchain$trainer02_runner.coverage" NAME="trainer02_runner Coverage Results" MODIFIED="1666840019173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$fl_admin_runner_fedshare.coverage" NAME="fl_admin_runner fedshare Coverage Results" MODIFIED="1707068980134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fladmin" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$flAdmin.coverage" NAME="flAdmin Coverage Results" MODIFIED="1707086033419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fladmin" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$config_generator.coverage" NAME="config_generator Coverage Results" MODIFIED="1668084920413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dist_fed_core_fl$trainer_runner.coverage" NAME="fedavg-trainer-01 Coverage Results" MODIFIED="1673721149764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
     <SUITE FILE_PATH="coverage/FedBlockchain$client.coverage" NAME="client Coverage Results" MODIFIED="1667434223035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/dist_fed_core_fl$gateway_config_generator.coverage" NAME="gateway_config_generator Coverage Results" MODIFIED="1668695328820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dist_fed_core_fl$sample.coverage" NAME="sample Coverage Results" MODIFIED="1673801522923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fladmin/fedavg" />
     <SUITE FILE_PATH="coverage/FedBlockchain$aggregator_org2_runner.coverage" NAME="aggregator_org2_runner Coverage Results" MODIFIED="1666840020700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/aggregator" />
     <SUITE FILE_PATH="coverage/FedBlockchain$fl_admin_runner.coverage" NAME="fl_admin_runner Coverage Results" MODIFIED="1666840026538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/fladmin" />
-    <SUITE FILE_PATH="coverage/dist_fed_core_fl$lead_aggregator_runner.coverage" NAME="lead_aggregator_runner Coverage Results" MODIFIED="1673907222288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leadaggregator/fedavg" />
     <SUITE FILE_PATH="coverage/FedBlockchain$trainer1_panel.coverage" NAME="trainer_panel Coverage Results" MODIFIED="1665510692729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl" />
     <SUITE FILE_PATH="coverage/FedBlockchain$lead_aggregator_runner.coverage" NAME="lead_aggregator_runner Coverage Results" MODIFIED="1666840024494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/leadaggregator" />
-    <SUITE FILE_PATH="coverage/dist_fed_core_fl$fl_admin_runner.coverage" NAME="fl_admin_runner Coverage Results" MODIFIED="1673907261948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fladmin" />
     <SUITE FILE_PATH="coverage/FedBlockchain$trainer_control_panel.coverage" NAME="trainer_control_panel Coverage Results" MODIFIED="1665502388639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/controlpanel" />
-    <SUITE FILE_PATH="coverage/FedBlockchain$fl_admin_panel.coverage" NAME="fl_admin_panel Coverage Results" MODIFIED="1665008662369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl/panel" />
     <SUITE FILE_PATH="coverage/FedBlockchain$trainer_runner.coverage" NAME="trainer01_runner Coverage Results" MODIFIED="1666840017512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fl" />
     <SUITE FILE_PATH="coverage/FedBlockchain$verifier.coverage" NAME="verifier Coverage Results" MODIFIED="1667410670688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
   </component>
